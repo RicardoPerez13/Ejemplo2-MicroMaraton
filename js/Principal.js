@@ -4,8 +4,8 @@ Ej.
 Resultados de 6 juegos: 1, 1, 0, 1, 0, 1, 1
 Salida:
 Ganaste el 66.67% de los juegos*/
-import Cl_Partido from "./Cl_Partido";
-import Cl_Equipo from "./Cl_Equipo";
+import Cl_Partido from "./Cl_Partido.js";
+import Cl_Equipo from "./Cl_Equipo.js";
 
 let partido1= new Cl_Partido(1);
 let partido2= new Cl_Partido(1);
@@ -25,7 +25,8 @@ equipo.procesar(partido5);
 equipo.procesar(partido6);
 equipo.procesar(partido7);
 
-let Salida = document.getElementId("Salida");
-Salida.INNERHTML = "Resultados del Equipo";
-Salida.INNERHTML = equipo.porcentajeVic();
+let salida=document.getElementById("salida");
+salida.INNERHTML="Resultados del Equipo";
+salida.INNERHTML+="<br> Ganaste el: "+equipo.porcentajeVic();
+
 

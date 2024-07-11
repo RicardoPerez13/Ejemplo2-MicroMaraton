@@ -14,6 +14,6 @@ constructor (){
         }
     }
     porcentajeVic(){
-        return porcentaje (this.cont_victorias/this.cont_partido)*100
+        return (this.cont_victorias/this.cont_partido)*100
     }
 }
