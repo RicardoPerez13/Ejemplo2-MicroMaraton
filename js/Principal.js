@@ -26,7 +26,9 @@ equipo.procesar(partido6);
 equipo.procesar(partido7);
 
 let salida=document.getElementById("salida");
-salida.INNERHTML="Resultados del Equipo";
-salida.INNERHTML+="<br> Ganaste el: "+equipo.porcentajeVic();
+salida.innerHTML="Resultados del Equipo";
+salida.innerHTML+="<br> El porcentaje de Victorias del Equipo es de: "+equipo.porcentajeVic()+"%";
+salida.innerHTML+="<br> El porcentaje de Derrotas del Equipo es de: "+equipo.porcentajeDerr()+"%";
+
 
 
